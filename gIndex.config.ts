@@ -50,7 +50,7 @@ const config: z.input<typeof Schema_Config> = {
      * You need to create a new folder and share it with the service account
      * Then, copy the folder id and paste it here
      */
-    rootFolder: "e93045f7aa2837d6eb087fa2ae7ca59f4fc2eb79bfe42c5372d82e59df21a6453a5d367ba063e1b84becc7a24a44f179",
+    rootFolder: "3cf84a51463f9ac75ede5cdf9088c02b3126c0a7f27283304ef54fce9215bd5b210ca2bdd5b1f865aa47d094ceade98f",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -139,7 +139,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * @default: false
      */
-    allowDownloadProtectedFile: true,
+    allowDownloadProtectedFile: false,
 
     /**
      * Duration in hours.
@@ -227,7 +227,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * @default: false
      */
-    showFileExtension: true,
+    showFileExtension: false,
 
     /**
      * Footer content
