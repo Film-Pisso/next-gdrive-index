@@ -153,7 +153,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * @default: 6 hours
      */
-    temporaryTokenDuration: ,
+    temporaryTokenDuration: 6,
 
     /**
      * Maximum file size that can be downloaded via api routes
@@ -166,7 +166,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * @default: 4MB
      */
-    maxFileSize: 0,
+    maxFileSize: 4194304,
 
     /**
      * Only show preview for files that are smaller than this size
@@ -181,7 +181,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * @default: 100MB
      */
-    streamMaxSize: 0,
+    streamMaxSize: 104857600,
   },
 
   siteConfig: {
@@ -193,9 +193,9 @@ const config: z.input<typeof Schema_Config> = {
      *
      * You can set it to undefined if you don't want to use it
      */
-    siteName: "Film Pisso",
-    siteNameTemplate: "Download - %t",
-    siteDescription: "Movies & Tv Shows Downloading and Streaming Platform",
+    siteName: "next-gdrive-index",
+    siteNameTemplate: "%s - %t",
+    siteDescription: "A Google Drive Index built using Next.js",
 
     /**
      * Site Icon will be used on navbar
@@ -208,8 +208,8 @@ const config: z.input<typeof Schema_Config> = {
      * Both are used on metadata
      * Affects the value of footer
     */
-    siteAuthor: "Film Pisso",
-    twitterHandle: "",
+    siteAuthor: "mbahArip",
+    twitterHandle: "@mbahArip",
 
     /**
      * Next.js Metadata robots object
